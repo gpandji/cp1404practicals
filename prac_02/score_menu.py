@@ -5,7 +5,7 @@ def main():
     choice = input()
     while choice != "Q":
         if choice == "G":
-            get_score()
+            score=get_score()
         elif choice == "P":
             print_sore(score)
         elif choice == "S":
@@ -16,17 +16,23 @@ def main():
         choice = input()
     print("Finished")
 def get_score():
-    """Print as many asterisks as the input score."""
-    score = float(input("Enter score: "))
-    return score
+    """get a valid score."""
+    while True:
+        try:
+            score = float(input("Enter score: "))
+        except ValueError:
+            # Not a valid number
+            print("You must enter a number")
+        else:
+            while score < 0 and score > 100:
+                print("You must enter a number between 0 to 100")
+                score = input("Enter score: ")
+            else:
+                return score
 
 def print_sore(score):
     """Print respective result for input score."""
-    if score < 0:
-        print("Invalid score")
-    elif score > 100:
-        print("Invalid score")
-    elif score > 90:
+    if score > 90:
         print("Excellent")
     elif score > 50:
         print("Passable")
@@ -34,7 +40,7 @@ def print_sore(score):
         print("Bad")
 
 def print_asterisks(score):
-    """Print as many asterisks as the input score."""
+    """Print as many asteri-sks as the input score."""
     print('*' * int(score))
 
 main()
