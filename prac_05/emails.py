@@ -1,7 +1,7 @@
 """
-Word Occurrences
-Estimate: 20 minutes
-Actual:   32 minutes
+emails
+Estimate: 40 minutes
+Actual:   52 minutes
 """
 
 emails_to_names = {}
