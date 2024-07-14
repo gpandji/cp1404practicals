@@ -1,4 +1,3 @@
-# languages.py
 from programming_language import ProgrammingLanguage
 
 

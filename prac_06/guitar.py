@@ -1,6 +1,7 @@
 """
-Guitar class for representing guitars.
-Estimated time to complete: 30 minutes
+Guitar class
+Estimated : 30 minutes
+Actual : 40 minutes
 """
 
 
@@ -17,7 +18,7 @@ class Guitar:
 
     def get_age(self):
         """Return the age of the guitar."""
-        return f"in 2024 the {self.name} is {2024 - self.year}"  # assuming the current year is 2024"
+        return f"in 2024 the {self.name} is {2024 - self.year}"
 
     def is_vintage(self):
         """Return True if the guitar is 50 or more years old, False otherwise."""
