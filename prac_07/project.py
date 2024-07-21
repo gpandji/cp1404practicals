@@ -6,9 +6,9 @@ class Project:
         """Initialize a Project instance."""
         self.name = name
         self.start_date = datetime.strptime(start_date, "%d/%m/%Y").date()
-        self.priority = priority
-        self.cost_estimate = cost_estimate
-        self.completion_percentage = completion_percentage
+        self.priority = int(priority)
+        self.cost_estimate = float(cost_estimate)
+        self.completion_percentage = int(completion_percentage)
 
     def __str__(self):
         """Return a string representation of the project."""
