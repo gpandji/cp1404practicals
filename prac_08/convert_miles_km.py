@@ -36,5 +36,4 @@ class ConvertMilesToKmApp(App):
             self.root.ids.output_label.text = "Invalid input"
 
 
-if __name__ == '__main__':
-    ConvertMilesToKmApp().run()
+ConvertMilesToKmApp().run()
